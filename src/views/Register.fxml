@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginPage">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="1000.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/css/bg_rooms.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="402.0" layoutY="119.0" promptText="Enter Username" />
+      <PasswordField fx:id="pwd" layoutX="401.0" layoutY="193.0" promptText="Enter Password" />
+      <TextField fx:id="user_location" layoutX="401.0" layoutY="269.0" promptText="Enter your city/ state" />
+      <Button layoutX="428.0" layoutY="399.0" mnemonicParsing="false" onAction="#registeruser" text="Register and Login" />
+   </children>
+</AnchorPane>

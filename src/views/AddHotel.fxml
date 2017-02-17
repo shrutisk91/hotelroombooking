@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="1000.0" stylesheets="@../../NewFile.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HotelController">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/css/Light-Wood-Background-Wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="hotel_name" layoutX="557.0" layoutY="136.0" />
+      <TextField fx:id="hotel_location" layoutX="556.0" layoutY="233.0" />
+      <TextField fx:id="hotel_stars" layoutX="556.0" layoutY="340.0" />
+      <Text fill="#462323" layoutX="204.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Following Details">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font></Text>
+      <Text fill="#462323" layoutX="242.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of the Hotel">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Text>
+      <Text fill="#462323" layoutX="225.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City/location of Hotel">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Text>
+      <Text fill="#462323" layoutX="272.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Rating">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Text>
+      <Button layoutX="439.0" layoutY="414.0" mnemonicParsing="false" onAction="#addhotel" text="SUBMIT">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Button>
+      <Button layoutX="766.0" layoutY="458.0" mnemonicParsing="false" onAction="#goback" text="Go Back to Main Menu">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

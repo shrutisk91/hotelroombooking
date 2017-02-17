@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddRoom">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/css/Light-Wood-Background-Wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="hotelcombo" layoutX="449.0" layoutY="130.0" prefWidth="150.0" promptText="Enter Hotel" />
+      <ComboBox fx:id="roomtypecombo" layoutX="435.0" layoutY="229.0" prefHeight="31.0" prefWidth="177.0" promptText="Enter Room Type" />
+      <TextField fx:id="rate_per_day" layoutX="431.0" layoutY="314.0" promptText="Enter new Rate" />
+      <Button layoutX="494.0" layoutY="423.0" mnemonicParsing="false" onAction="#updateroomrate" text="Update" />
+      <Button layoutX="62.0" layoutY="497.0" mnemonicParsing="false" onAction="#goback" text="Go Back to Main Menu" />
+   </children>
+</AnchorPane>
